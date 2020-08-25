@@ -13,13 +13,13 @@ class Model():
               loss          = 'binary_crossentropy',
               metrics       = [jaccard_distance, 'acc']):
         
-        model_name    = self.model_name
-        classes       = self.classes
-        input_shape   = self.input_shape
-        dropout       = self.dropout
-        learning_rate = self.learning_rate
-        loss          = self.loss
-        metrics       = self.metrics
+        self.model_name    = model_name
+        self.classes       = classes
+        self.input_shape   = input_shape
+        self.dropout       = dropout
+        self.learning_rate = learning_rate
+        self.loss          = loss
+        self.metrics       = metrics
     
     def build(self):
         
